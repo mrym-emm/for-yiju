@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.data-breach-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FFF1D5;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  padding: 24px;
+  margin: 20px auto;
+  max-width: 800px;
+
+}
+
+.data-breach-container h2 {
+  color: #333;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+/* this is styling for the swipe bar itself (before it gets swiped) */
+.swipe-container {
+  position: center;
+  height: 60px;
+  width: 500px;
+  background-color: #DDA853;
+  border-radius: 30px;
+  margin: 20px 0;
+  border: 2px solid #DDA853;
+  overflow: hidden;
+  display: flex;
+
+  align-items: center;
+  
+
+}
+
+/* had to adjust height manually */
+.swipe-button {
+  background-color: #4F959D;
+  color: white;
+  height: 60px; 
+  border: none;
+  border-radius: 25px;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 2s ease;
+}
+
+.swipe-button:hover {
+  background-color: #98D2C0;
+  color: black
+}
+
+.swipe-button.animating {
+  transform: translateX(1000px);
+}
